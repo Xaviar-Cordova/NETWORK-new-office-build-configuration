@@ -1,6 +1,7 @@
 # NETWORK-new-office-build-configuration
 
-![2024-10-07 21_59_30-New Office - GNS3](https://github.com/user-attachments/assets/70044d9e-96c6-4cae-8ab9-4a6c1c34f4ca)
+
+![image](https://github.com/user-attachments/assets/f5de322a-6624-4c03-838d-f776abc51112)
 
 We've been tasked with setting up abrand-new office we want to keep online24/7. First is Layer 2 management & network maintenance. Once we've enabled LLDP to help identify
 Devices' capabilities later, We then created vlans to segment how datais transferred so their fewer chances of it being eavesdropped & Vlan 3 itself hasa management interface on each
