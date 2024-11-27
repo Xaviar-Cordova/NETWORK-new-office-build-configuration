@@ -5,7 +5,7 @@
 
 We've been tasked with setting up a brand-new office we want to keep online 24/7. First is Layer 2 management & network maintenance. Once we've enabled LLDP to help identify
 Devices' capabilities later, We then created vlans to segment how data is transferred so their fewer chances of it being eavesdropped & Vlan 3 itself hasa management interface on each
-switch enabled so we remote into those later. since we're introducing Vlans, we implemented MSTP so each of themwill have a better idea on what path to choose, but kept all vlan in group 0 for now. Just to be safe no random switch overwrites all the others one day, we alsoset VTP to transparent mode. finally, it is only a matter of setting up the trunk and
+switch enabled so we remote into those later. since we're introducing Vlans, we implemented MSTP so each of them will have a better idea on what path to choose, but kept all vlan in group 0 for now. Just to be safe no random switch overwrites all the others one day, we also set VTP to transparent mode. finally, it is only a matter of setting up the trunk and
 assigning ports to its intended segments.
 
 
@@ -14,7 +14,7 @@ assigning ports to its intended segments.
 
 see video for [complete layer 2 setup](https://www.linkedin.com/posts/xaviar-cordova_ccnp-lab-1-part-1-layer-2-in-this-project-activity-7049029223138684928-3dPh?)
 
-Let's now began with IP routing &services. As a GNS3’s VM, technically our gateway of last resort is our home network that act as a WAN as we’ll enable NAT overload that'll keep our network separate. This site is one of many,which after setting up OSPF & assigning it under area 5 it'll allow all current and future locations to ability to learn & reach it later. Once we set the ACL rule & specify the in/outgress interfaces for NATing, We’ll setup a standby router using VRRP so in case a router fails, the other one will take control. We want the OSPF to use router 1 as the default best path so we changed the metric for the standby (in this case since we're not connected to an ABR we're
+Let's now began with IP routing &services. As a GNS3’s VM, technically our gateway of last resort is our home network that act as a WAN as we’ll enable NAT overload that'll keep our network separate. This site is one of many, which after setting up OSPF & assigning it under area 5 it'll allow all current and future locations to ability to learn & reach it later. Once we set the ACL rule & specify the in/outgress interfaces for NATing, We’ll setup a standby router using VRRP so in case a router fails, the other one will take control. We want the OSPF to use router 1 as the default best path so we changed the metric for the standby (in this case since we're not connected to an ABR we're
 pretending it'll process on it). We wanted a Window server to hand out DHCP leases, so we set the Helper address to 10.0.3.254 right after enabling the sub-interfaces for the VLANs.
 
 
