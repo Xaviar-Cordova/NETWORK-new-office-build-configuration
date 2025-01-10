@@ -27,5 +27,5 @@ As I've mentioned this new Office becoming apart of the Enterprise's network, th
 
 ![2024-11-09 22_23_46-OSPF locations - GNS3](https://github.com/user-attachments/assets/4329bfcc-1b7c-44dc-a49e-1ded173d3c8f)
 
-[This last video is to audit it configuration](https://www.linkedin.com/posts/xaviar-cordova_ccnp-lab-2-ospf-multi-area-activity-7062887970281816064-bRIT?)
+[This last video is to audit it configuration and test it functionality](https://www.linkedin.com/posts/xaviar-cordova_ccnp-lab-2-ospf-multi-area-activity-7062887970281816064-bRIT?)
  
