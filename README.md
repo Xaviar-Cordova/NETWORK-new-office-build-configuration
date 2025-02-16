@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/f5de322a-6624-4c03-838d-f776abc51112)
 
 We've been tasked with setting up a brand-new office we want to keep online 24/7. First is Layer 2 management & network maintenance. Once we've enabled LLDP to help identify
-Devices' capabilities later, We then created VLANs to segment how data is transferred so there is fewer chances of it being eavesdropped & Vlan 3 itself has been set with a management interface enabled on each switch so we SSH remote into those later. since we're introducing Vlans, we implemented MSTP so each of them will have a better idea on what paths to choose, but kept all vlan in group 0 for now. Just to be safe no random Cisco switch overwrites all the others one day, we also set VTP to transparent mode. finally, it is only a matter of setting up the trunk and assigning ports to its intended segments.
+Devices' capabilities later, We then created VLANs to segment how data is transferred so there is fewer chances of it being eavesdropped & Vlan 3 itself has been set with a management interface enabled on each switch so we can SSH remote into those later. since we're introducing Vlans, we implemented MSTP so each of them will have a better idea on what paths to choose, but kept all vlan in group 0 for now. Just to be safe no random Cisco switch overwrites all the others one day, we also set VTP to transparent mode. finally, it is only a matter of setting up the trunk and assigning ports to its intended segments.
 
 
 ![Layer 2 Config](https://github.com/user-attachments/assets/4b93fd98-5f6a-465f-aa07-ddd1a1992d60)
